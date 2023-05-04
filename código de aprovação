@@ -1,0 +1,13 @@
+function SituacaoAluno() {
+    b1 = parseFloat(prompt('Digite sua nota B1: '))
+    b2 = parseFloat(prompt('Digite sua nota B2: '))
+    f = parseInt(prompt('Quantas faltas você tem? '))
+    m = (b1 + b2) / 2
+    if (m >= 7 && f <= 20) {
+        alert('Sua média é: ' + m + ' Parabéns , Aprovado.')
+    }
+    else if (m < 7 || f > 20) {
+        alert('Reprovado.')
+    }
+
+} 
